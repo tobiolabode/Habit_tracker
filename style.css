@@ -229,7 +229,6 @@ main {
 .calendar__day {
   border-right: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
-  word-wrap:break-word;
 }
 
 .calendar__day:last-child {
