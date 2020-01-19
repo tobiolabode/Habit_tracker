@@ -235,6 +235,31 @@ main {
   border-right: 0;
 }
 
+.line1 {
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid red;
+    -webkit-transform:
+        translateY(-20px)
+        translateX(5px)
+        rotate(27deg);
+    position: absolute;
+    /* top: -20px; */
+}
+
+.line2 {
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid green;
+    -webkit-transform:
+        translateY(20px)
+        translateX(5px)
+        rotate(-26deg);
+    position: absolute;
+    top: -33px;
+    left: -13px;
+}
+
 .toggle{
   display: grid;
   grid-template-columns: 1fr 1fr;
