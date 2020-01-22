@@ -28,7 +28,7 @@
       </div>
       <div class="calendar__week">
         <div class="calendar__day day">1 <br> test </div>
-        <div class="calendar__day day">2 <br> <img src="cross icon.png" alt="cross" style="width:60px;height:60px "> </div>
+        <div class="calendar__day day">2 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px "> </div>
         <div class="calendar__day day">3
             <div class="line1"></div>
             <div class="line2"></div>
@@ -41,9 +41,12 @@
             }
         </script>
 
-        <a href="http://example.com">
-        <div class="calendar__day day">5</div>
-        </a>
+        <div class="calendar__day day" id="day5" onclick="myFunction2()">5</div>
+        <script>
+            function myFunction2() {
+              document.getElementById('day5').innerHTML = '<img src="cross_icon.png" alt="cross" style="width:60px;height:60px">';
+            }
+        </script>
 
         <div class="calendar__day day">6</div>
         <div class="calendar__day day">7</div>

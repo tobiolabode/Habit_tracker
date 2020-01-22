@@ -229,6 +229,7 @@ main {
 .calendar__day {
   border-right: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
+  /* cursor:pointer; */
 }
 
 .calendar__day:last-child {
