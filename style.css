@@ -235,29 +235,60 @@ main {
   border-right: 0;
 }
 
-.line1 {
-    width: 112px;
-    height: 47px;
+
+/* line1 {
+
+    width: 180px;
+    height: 49px;
     border-bottom: 1px solid red;
+    -webkit-transform: translateY(-30px) translateX(-20px) rotate(35deg);
+    position: absolute;
+    top: -20px;
+
+} */
+
+
+
+
+/* .line2 {
+    width: 149px;
+
+    height: 40px;
+
+    border-bottom: 1px solid green;
+
+    -webkit-transform: translateY(-30px) translateX(-20px) rotate(-35deg);
+
+    position: absolute;
+
+    top: -33px;
+
+    left: -13px;
+} */
+
+.line1 {
+    width: 180px;
+    height: 49px;
+    border-bottom: 5px solid #050505;
     -webkit-transform:
-        translateY(-20px)
-        translateX(5px)
-        rotate(27deg);
+        translateY(-30px)
+        translateX(-20px)
+        rotate(35deg);
     position: absolute;
     /* top: -20px; */
 }
 
 .line2 {
-    width: 112px;
-    height: 47px;
-    border-bottom: 1px solid green;
+    width: 180px;
+    height: 49px;
+    border-bottom: 5px solid black;
     -webkit-transform:
-        translateY(20px)
-        translateX(5px)
-        rotate(-26deg);
+        translateY(-30px)
+        translateX(-50px)
+        rotate(-35deg);
     position: absolute;
-    top: -33px;
-    left: -13px;
+    /* top: -33px;
+    left: -13px; */
 }
 
 .toggle{

@@ -33,8 +33,18 @@
             <div class="line1"></div>
             <div class="line2"></div>
         </div>
-        <div class="calendar__day day">4</div>
+        <div class="calendar__day day" id="day4" onclick="myFunction()" >4</div>
+
+        <script>
+            function myFunction() {
+              document.getElementById('day4').innerHTML = "YOU CLICKED ME!";
+            }
+        </script>
+
+        <a href="http://example.com">
         <div class="calendar__day day">5</div>
+        </a>
+
         <div class="calendar__day day">6</div>
         <div class="calendar__day day">7</div>
       </div>
