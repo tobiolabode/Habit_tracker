@@ -2,6 +2,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <div class="wrapper">
   <main>
@@ -48,7 +49,16 @@
             }
         </script>
 
-        <div class="calendar__day day">6</div>
+        <div class="calendar__day day" id=day6 >6 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image"> </div>
+        <script>
+
+            $('#day6').click(function() {
+                $("#image").toggle();
+                });
+
+        </script>
+
+
         <div class="calendar__day day">7</div>
       </div>
       <div class="calendar__week">
