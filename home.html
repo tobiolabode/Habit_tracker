@@ -8,9 +8,23 @@
   <main>
     <div class="toolbar">
       <div class="toggle">
-        <div class="toggle__option">week</div>
-        <div class="toggle__option toggle__option--selected">month</div>
+        <div class="toggle__option" id="week_toggle_button">week</div>
+        <div class="toggle__option toggle__option--selected" id="month_toggle_button">month</div>
       </div>
+
+      <script>
+      $("#month_toggle_button").click(function() {
+        $( this ).toggleClass("toggle__option--selected");
+        $('#week_toggle_button').toggleClass("toggle__option--selected")
+      });
+
+      $("#week_toggle_button").click(function() {
+        $( this ).toggleClass("toggle__option--selected");
+        $('#month_toggle_button').toggleClass("toggle__option--selected")
+      });
+
+      </script>
+
       <div class="current-month">June 2016</div>
       <div class="search-input">
         <input type="text" value="What are you looking for?">
@@ -28,38 +42,67 @@
         <div>sun</div>
       </div>
       <div class="calendar__week">
-        <div class="calendar__day day">1 <br> test </div>
-        <div class="calendar__day day">2 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px "> </div>
-        <div class="calendar__day day">3
-            <div class="line1"></div>
-            <div class="line2"></div>
-        </div>
-        <div class="calendar__day day" id="day4" onclick="myFunction()" >4</div>
-
-        <script>
-            function myFunction() {
-              document.getElementById('day4').innerHTML = "YOU CLICKED ME!";
-            }
-        </script>
-
-        <div class="calendar__day day" id="day5" onclick="myFunction2()">5</div>
-        <script>
-            function myFunction2() {
-              document.getElementById('day5').innerHTML = '5 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px">';
-            }
-        </script>
-
-        <div class="calendar__day day" id=day6 >6 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image"> </div>
+        <div class="calendar__day day" id="day1">1 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image1"></div>
         <script>
 
-            $('#day6').click(function() {
-                $("#image").toggle();
+            $('#day1').click(function() {
+                $("#image1").toggle();
                 });
 
         </script>
 
 
-        <div class="calendar__day day">7</div>
+        <div class="calendar__day day" id="day2">2 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image2"> </div>
+        <script>
+
+            $('#day2').click(function() {
+                $("#image2").toggle();
+                });
+
+        </script>
+        <div class="calendar__day day" id="day3">3 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image3"></div>
+        <script>
+
+            $('#day3').click(function() {
+                $("#image3").toggle();
+                });
+
+        </script>
+
+        <div class="calendar__day day" id="day4">4 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image4"></div>
+
+        <script>
+            $('#day4').click(function() {
+                $("#image4").toggle();
+            });
+        </script>
+
+        <div class="calendar__day day" id="day5">5 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image5"></div>
+        <script>
+            $('#day5').click(function() {
+                $("#image5").toggle();
+            });
+        </script>
+
+        <div class="calendar__day day" id=day6 >6 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image6"> </div>
+        <script>
+
+            $('#day6').click(function() {
+                $("#image6").toggle();
+                });
+
+        </script>
+
+
+        <div class="calendar__day day" id="day7">7 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image7"></div>
+        <script>
+
+            $('#day7').click(function() {
+                $("#image7").toggle();
+                });
+
+        </script>
+
       </div>
       <div class="calendar__week">
         <div class="calendar__day day">8</div>
