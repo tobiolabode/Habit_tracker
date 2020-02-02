@@ -33,7 +33,18 @@
 
       </script>
 
-      <div class="current-month">June 2016</div>
+      <div class="current-month" id="current_month">June 2016</div>
+      <script>
+          var d = new Date();
+          var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+          var month = months[d.getMonth()];
+          var year = d.getFullYear();
+          var dateStr = month +' '+ year;
+
+          document.getElementById("current_month").innerHTML = dateStr;
+
+      </script>
+
       <div class="search-input">
         <input type="text" value="What are you looking for?">
         <i class="fa fa-search"></i>
