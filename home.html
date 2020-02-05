@@ -43,6 +43,14 @@
 
           document.getElementById("current_month").innerHTML = dateStr;
 
+          function daysInMonth (month, year) {
+            return new Date(year, month, 0).getDate();
+
+          }
+          console.log(daysInMonth(2,2020));
+
+          
+
       </script>
 
       <div class="search-input">
@@ -151,13 +159,13 @@
         <div class="calendar__day day">28</div>
       </div>
       <div class="calendar__week" id="week5">
-        <div class="calendar__day day">29</div>
-        <div class="calendar__day day">30</div>
-        <div class="calendar__day day">31</div>
-        <div class="calendar__day day">1</div>
-        <div class="calendar__day day">2</div>
-        <div class="calendar__day day">3</div>
-        <div class="calendar__day day">4</div>
+        <div class="calendar__day day"id="week5_day_29">29</div>
+        <div class="calendar__day day"id="week5_day_30">30</div>
+        <div class="calendar__day day"id="week5_day_31">31</div>
+        <div class="calendar__day day"id="week5_day_1">1</div>
+        <div class="calendar__day day"id="week5_day_2">2</div>
+        <div class="calendar__day day"id="week5_day_3">3</div>
+        <div class="calendar__day day"id="week5_day_4">4</div>
       </div>
     </div>
   </main>
