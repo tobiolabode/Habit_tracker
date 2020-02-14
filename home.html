@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <div class="wrapper">
   <main>
@@ -12,31 +13,15 @@
         <div class="toggle__option toggle__option--selected" id="month_toggle_button">month</div>
       </div>
 
-      <script>
-      $("#month_toggle_button").click(function() {
-        $( this ).toggleClass("toggle__option--selected");
-        $('#week_toggle_button').toggleClass("toggle__option--selected")
-        $('#week2').toggle()
-        $('#week3').toggle()
-        $('#week4').toggle()
-        $('#week5').toggle()
-      });
+      <!-- <script>
+        // dsd
 
-      $("#week_toggle_button").click(function() {
-        $( this ).toggleClass("toggle__option--selected");
-        $('#month_toggle_button').toggleClass("toggle__option--selected")
-        $('#week2').toggle()
-        $('#week3').toggle()
-        $('#week4').toggle()
-        $('#week5').toggle()
-      });
-
-      </script>
+      </script> -->
       <a href="#" class="previous round">&#8249;</a>
       <div class="current-month" id="current_month">June 2016</div>
       <a href="#" class="next round">&#8250;</a>
 
-      <script>
+      <!-- <script>
           var d = new Date();
           var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
           var month = months[d.getMonth()];
@@ -55,7 +40,7 @@
 
 
 
-      </script>
+      </script> -->
 
       <div class="search-input">
         <input type="text" value="What are you looking for?">
@@ -74,65 +59,65 @@
       </div>
       <div class="calendar__week">
         <div class="calendar__day day" id="day1">1 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image1"></div>
-        <script>
+        <!-- <script>
 
             $('#day1').click(function() {
                 $("#image1").toggle();
                 });
 
-        </script>
+        </script> -->
 
 
         <div class="calendar__day day" id="day2">2 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image2"> </div>
-        <script>
+        <!-- <script>
 
             $('#day2').click(function() {
                 $("#image2").toggle();
                 });
 
-        </script>
+        </script> -->
         <div class="calendar__day day" id="day3">3 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image3"></div>
-        <script>
+        <!-- <script>
 
             $('#day3').click(function() {
                 $("#image3").toggle();
                 });
 
-        </script>
+        </script> -->
 
         <div class="calendar__day day" id="day4">4 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image4"></div>
 
-        <script>
+        <!-- <script>
             $('#day4').click(function() {
                 $("#image4").toggle();
             });
-        </script>
+        </script> -->
 
         <div class="calendar__day day" id="day5">5 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image5"></div>
-        <script>
+        <!-- <script>
             $('#day5').click(function() {
                 $("#image5").toggle();
             });
-        </script>
+        </script> -->
 
         <div class="calendar__day day" id=day6 >6 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image6"> </div>
-        <script>
+        <!-- <script>
 
             $('#day6').click(function() {
                 $("#image6").toggle();
                 });
 
-        </script>
+        </script> -->
 
 
         <div class="calendar__day day" id="day7">7 <br> <img src="cross_icon.png" alt="cross" style="width:60px;height:60px;display:none;" id="image7"></div>
-        <script>
+        <!-- <script>
 
             $('#day7').click(function() {
                 $("#image7").toggle();
                 });
 
-        </script>
+        </script> -->
 
       </div>
       <div class="calendar__week" id="week2">
@@ -171,13 +156,14 @@
         <div class="calendar__day day week5" id="week5_day_3">3</div>
         <div class="calendar__day day week5" id="week5_day_4">4</div>
 
-        <script>
+        <!-- <script>
         var list = $("#week5_day_29, #week5_day_30, #week5_day_31")
             $("#week5").hide();
-        </script>
+        </script> -->
 
       </div>
     </div>
+    <script src="script_logic.js"></script>
   </main>
   <sidebar>
     <div class="logo">logo</div>
