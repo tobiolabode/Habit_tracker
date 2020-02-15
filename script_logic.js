@@ -72,3 +72,12 @@ $('#day7').click(function() {
 
 var list = $("#week5_day_29, #week5_day_30, #week5_day_31")
     $("#week5").hide();
+
+
+$("#left_arrow_button").click(function() {
+    alert("Your anchor is clicked.");
+});
+
+$("#right_arrow_button").click(function() {
+    alert("Your anchor is clicked.");
+});
