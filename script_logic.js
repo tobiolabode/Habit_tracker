@@ -25,6 +25,48 @@ var dateStr = month +' '+ year;
 
 document.getElementById("current_month").innerHTML = dateStr;
 
+
+function next_month() {
+    if (month === 11) {
+        year + 1
+    } else {
+        year = year
+    }
+    month = (month + 1) % 12
+    var new_dateStr = month +' '+ year
+}
+
+function previous_month() {
+    if (month === 0) {
+        year = year - 1
+    } else {
+        year = year
+    }
+
+    if (month === 0) {
+        month = 11
+    } else {
+        month = month - 1
+    }
+    var new_dateStr = month +' '+ year
+    document.getElementById("current_month").innerHTML = new_dateStr;
+}
+
+
+
+
+
+
+$("#left_arrow_button").click(function() {
+    previous_month();
+
+});
+
+$("#right_arrow_button").click(function() {
+    alert("Your anchor is clicked.");
+});
+
+
 function daysInMonth (month, year) {
   return new Date(year, month, 0).getDate();
 
@@ -32,6 +74,9 @@ function daysInMonth (month, year) {
 console.log(daysInMonth(2,2020));
 
 var number_days = daysInMonth(2,2020)
+
+
+
 
 
 
@@ -72,12 +117,3 @@ $('#day7').click(function() {
 
 var list = $("#week5_day_29, #week5_day_30, #week5_day_31")
     $("#week5").hide();
-
-
-$("#left_arrow_button").click(function() {
-    alert("Your anchor is clicked.");
-});
-
-$("#right_arrow_button").click(function() {
-    alert("Your anchor is clicked.");
-});
