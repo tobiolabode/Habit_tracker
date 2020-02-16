@@ -7,7 +7,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-The project mainly consists of a html file and CSS file. The only prerequisite is that when loading the HTML file that you have an internet connection so it load the external scripts.
+The project consists of a html file, CSS file and JavaScript file. The only prerequisite is that when loading the HTML file that you have an internet connection so it load the external scripts.
 
 
 ### Installing
