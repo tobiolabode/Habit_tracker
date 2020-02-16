@@ -20,6 +20,7 @@ $("#week_toggle_button").click(function() {
 var d = new Date();
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var month = months[d.getMonth()];
+var month_num = d.getMonth();
 var year = d.getFullYear();
 var dateStr = month +' '+ year;
 
@@ -27,28 +28,28 @@ document.getElementById("current_month").innerHTML = dateStr;
 
 
 function next_month() {
-    if (month === 11) {
+    if (month_num === 11) {
         year + 1
     } else {
         year = year
     }
-    month = (month + 1) % 12
+    month_num = (month_num + 1) % 12
     var new_dateStr = month +' '+ year
 }
 
 function previous_month() {
-    if (month === 0) {
+    if (month_num === 0) {
         year = year - 1
     } else {
         year = year
     }
 
-    if (month === 0) {
-        month = 11
+    if (month_num === 0) {
+        month_num = 11
     } else {
-        month = month - 1
+        month_num = month_num - 1
     }
-    var new_dateStr = month +' '+ year
+    var new_dateStr = months[month_num] +' '+ year
     document.getElementById("current_month").innerHTML = new_dateStr;
 }
 
