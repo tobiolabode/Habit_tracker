@@ -61,6 +61,7 @@ function previous_month() {
 
 $("#left_arrow_button").click(function() {
     previous_month();
+    change_calendar_days();
 
 });
 
@@ -77,7 +78,19 @@ console.log(daysInMonth(2,2020));
 
 var number_days = daysInMonth(2,2020)
 
+function change_calendar_days() {
 
+    current_month_num = daysInMonth(month_num, year)
+
+    difference  = 31+4 - current_month_num //31 (+4 for days in other months. ) - current_month
+    // toggle down till current month
+    list_week_5 = $(".week5").toArray()
+    for (var i = 0; i < difference; i++) {
+        // console.log(list_week_5[i]);
+        console.log(list_week_5);
+        $(list_week_5[i]).css( "border", "3px solid red" );
+    }
+}
 
 
 
@@ -118,4 +131,4 @@ $('#day7').click(function() {
 
 
 var list = $("#week5_day_29, #week5_day_30, #week5_day_31")
-    $("#week5").hide();
+// $("#week5").hide();
