@@ -29,12 +29,13 @@ document.getElementById("current_month").innerHTML = dateStr;
 
 function next_month() {
     if (month_num === 11) {
-        year + 1
+        year = year + 1
     } else {
         year = year
     }
     month_num = (month_num + 1) % 12
-    var new_dateStr = month +' '+ year
+    var new_dateStr = months[month_num] +' '+ year
+    document.getElementById("current_month").innerHTML = new_dateStr;
 }
 
 function previous_month() {
@@ -64,7 +65,7 @@ $("#left_arrow_button").click(function() {
 });
 
 $("#right_arrow_button").click(function() {
-    alert("Your anchor is clicked.");
+    next_month();
 });
 
 
