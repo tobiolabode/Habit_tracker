@@ -82,12 +82,14 @@ function change_calendar_days() {
 
     current_month_num = daysInMonth(month_num, year)
 
-    difference  = 31+4 - current_month_num //31 (+4 for days in other months. ) - current_month
+    difference  = (31 + 4) - current_month_num //31 (+4 for days in other months. ) - current_month
+    console.log(difference);
     // toggle down till current month
     list_week_5 = $(".week5").toArray()
+    var list_week_5_reverse = list_week_5.reverse()
     for (var i = 0; i < difference; i++) {
         // console.log(list_week_5[i]);
-        console.log(list_week_5);
+        // console.log(list_week_5);
         $(list_week_5[i]).css( "border", "3px solid red" );
     }
 }
