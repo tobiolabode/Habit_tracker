@@ -67,6 +67,7 @@ $("#left_arrow_button").click(function() {
 
 $("#right_arrow_button").click(function() {
     next_month();
+    change_calendar_days();
 });
 
 
@@ -87,6 +88,9 @@ function change_calendar_days() {
     // toggle down till current month
     list_week_5 = $(".week5").toArray()
     var list_week_5_reverse = list_week_5.reverse()
+    $(list_week_5).css("border", "none");
+    $(list_week_5).css( "border-right", "1px solid #e1e1e1" );
+    $(list_week_5).css( "border-top", "1px solid #e1e1e1" );
     for (var i = 0; i < difference; i++) {
         // console.log(list_week_5[i]);
         // console.log(list_week_5);
