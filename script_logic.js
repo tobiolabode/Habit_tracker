@@ -95,6 +95,13 @@ function change_calendar_days() {
         // console.log(list_week_5[i]);
         // console.log(list_week_5);
         $(list_week_5[i]).css( "border", "3px solid red" );
+        $(list_week_5[i]).addClass("other_month")
+    }
+
+
+    if ($(".other_month").is(":visible")) {
+        $(".other_month").hide();
+        $(".week4").css("border-bottom", "1px solid #e1e1e1")
     }
 }
 
